@@ -23,8 +23,8 @@ title: "Home"
 
   <!-- Action links: About + Projects -->
   <div class="hero__actions">
-    <a class="btn btn--primary" href="{{ '/about/' | relative_url }}">About Me</a>
-    <a class="btn btn--secondary" href="{{ '/projects/' | relative_url }}">My Projects</a>
+   <a class="btn btn--primary" href="/about/">About Me</a>
+  <a class="btn btn--secondary" href="/projects/">My Projects</a>
   </div>
 </div>
 
