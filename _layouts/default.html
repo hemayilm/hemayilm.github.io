@@ -3,31 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title | default: "Hamayil Mammadova" }}</title>
-  
-  <!-- Link to global CSS -->
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  <!-- Site CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
-  
-  <!-- Font Awesome for icons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
 <body>
-  
-  <!-- Navbar Include -->
+  <!-- Navbar -->
   {% include navbar.html %}
-  
+
   <!-- Page Content -->
   <main>
     {{ content }}
   </main>
-  
-  <!-- Footer Include -->
+
+  <!-- Footer -->
   {% include footer.html %}
 
-  <!-- Optional: link JS if needed -->
-  <!-- <script src="{{ '/assets/js/site-nav.js' | relative_url }}"></script> -->
+  <!-- Mobile menu toggle script -->
+  <script>
+    const toggle = document.querySelector('.nav__toggle');
+    const menu = document.querySelector('.nav__menu');
+    const header = document.querySelector('.site-header');
+
+    toggle.addEventListener('click', () => {
+      header.classList.toggle('nav--open');
+    });
+  </script>
 </body>
 </html>
-

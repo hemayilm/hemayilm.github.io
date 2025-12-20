@@ -9,6 +9,7 @@ title: "About"
 </header>
 
 <main class="container section--narrow">
+
   <section class="section content-block">
     <h2>Who I Am</h2>
     <p>
@@ -37,15 +38,3 @@ title: "About"
       <span class="skill">GitHub</span>
       <span class="skill">Jekyll</span>
       <span class="skill">Problem Solving</span>
-    </div>
-  </section>
-
-  <section class="section content-block content-block--center">
-    <h2>Next Step</h2>
-    <p>
-      You can explore my academic and personal work on the Projects page.
-    </p>
-    <a href="{{ '/projects/' | relative_url }}" class="btn btn--primary">
-      View Projects
-    </a>
-  </section>
