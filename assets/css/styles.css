@@ -332,3 +332,43 @@ img{ max-width:100%; height:auto; display:block }
   padding: 32px;
   border-radius: 12px;
 } 
+/* ===============================
+   PROJECTS PAGE SPECIFIC STYLES
+================================ */
+
+/* Center project images and make them uniform */
+.section.content-block .about-photo {
+  width: 180px;  /* slightly bigger than About page */
+  height: 180px;
+  margin: 16px auto 16px;
+  border-radius: 12px; /* optional: softer corners */
+  box-shadow: var(--shadow-md);
+}
+
+/* Project titles */
+.section.content-block h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: var(--color-accent);
+}
+
+/* Project description text */
+.section.content-block p {
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+/* Buttons inside projects */
+.section.content-block a.btn {
+  margin-top: 12px;
+  display: inline-block;
+}
+
+/* Center call-to-action section at bottom */
+.content-block--center {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 32px;
+  border-radius: 12px;
+  margin-top: 32px;
+}
