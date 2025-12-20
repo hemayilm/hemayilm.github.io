@@ -7,26 +7,26 @@ title: "Home"
 <header class="hero" role="banner">
   <div class="container hero__inner">
 
-    <-- Profile photo -->
-    <div class="hero__photo" aria-hidden="false">
-      <img src="{{ '/assets/images/image.png' | relative_url }}" alt="Profile photo">
-    </div>
+   <!-- Profile photo -->
+<div class="hero__photo" aria-hidden="false">
+  <img src="{{ '/assets/images/image.png' | relative_url }}" alt="Profile photo">
+</div>
 
-    <-- Intro content -->
-    <div class="hero__content">
-      <h1 class="hero__title">Hi — I'm Hamayil Mammadova.</h1>
-      <p class="hero__subtitle">
-        I am a student passionate about programming, web development, and designing elegant digital experiences. 
-        I enjoy creating clean and modular websites, experimenting with modern design concepts, and continuously learning new technologies.
-        Outside of coding, I appreciate aesthetics that are subtle, refined, and balanced — blending creativity with clarity.
-      </p>
+<!-- Intro content -->
+<div class="hero__content">
+  <h1 class="hero__title">Hi — I'm Hamayil Mammadova.</h1>
+  <p class="hero__subtitle">
+    I am a student passionate about programming, web development, and designing elegant digital experiences. 
+    I enjoy creating clean and modular websites, experimenting with modern design concepts, and continuously learning new technologies.
+    Outside of coding, I appreciate aesthetics that are subtle, refined, and balanced — blending creativity with clarity.
+  </p>
 
-      <-- Action links: About + Projects -->
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="{{ '/about/' | relative_url }}">About Me</a>
-        <a class="btn btn--secondary" href="{{ '/projects/' | relative_url }}">My Projects</a>
-      </div>
-    </div>
+  <!-- Action links: About + Projects -->
+  <div class="hero__actions">
+    <a class="btn btn--primary" href="{{ '/about/' | relative_url }}">About Me</a>
+    <a class="btn btn--secondary" href="{{ '/projects/' | relative_url }}">My Projects</a>
+  </div>
+</div>
 
   </div>
 </header>
