@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: "My Portfolio" }}</title>
+  
+  <!-- Link to global CSS -->
+  <link rel="stylesheet" href="{{ '/assets/images/css/styles.css' | relative_url }}">
+  
+  <!-- Optional: add favicon -->
+  <!-- <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/png"> -->
+</head>
+<body>
+  
+  <!-- Navbar Include -->
+  {% include navbar.html %}
+  
+  <!-- Page Content -->
+  <main>
+    {{ content }}
+  </main>
+  
+  <!-- Footer Include -->
+  {% include footer.html %}
+
+  <!-- Optional: link JS if needed -->
+  <!-- <script src="{{ '/assets/js/site-nav.js' | relative_url }}"></script> -->
+</body>
+</html>
+

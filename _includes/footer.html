@@ -1,0 +1,15 @@
+<!-- Footer include: place in _includes/footer.html -->
+<!-- Links to GitHub, Codecademy, and repo. Uses design tokens from styles.css. -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__links" aria-hidden="false">
+      <a class="footer__link" href="{{ site.github | default: 'https://github.com/youruser' }}" target="_blank" rel="noopener">GitHub</a>
+      <a class="footer__link" href="{{ site.codecademy | default: 'https://www.codecademy.com' }}" target="_blank" rel="noopener">Codecademy</a>
+      <a class="footer__link" href="{{ site.repository | default: 'https://github.com/youruser/yourrepo' }}" target="_blank" rel="noopener">Website Repo</a>
+    </div>
+
+    <div class="footer__meta" aria-label="Copyright">
+      &copy; {{ site.time | date: '%Y' }} {{ site.author | default: site.title | default: 'My Site' }}. All rights reserved.
+    </div>
+  </div>
+</footer>

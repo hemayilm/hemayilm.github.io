@@ -1,0 +1,49 @@
+<!-- Navbar include: place in _includes/navbar.html -->
+<!-- Left: brand/logo. Right: navigation links. Mobile: hamburger button toggles menu. -->
+<header class="site-header" role="banner">
+  <div class="container nav" role="navigation" aria-label="Primary">
+    <div class="nav__brand">
+      <!-- Site title / logo -->
+      <a href="{{ '/' | relative_url }}" class="nav__logo">{{ site.title | default: "My Site" }}</a>
+      <span class="nav__tag muted">{{ site.tagline }}</span>
+    </div>
+
+    <!-- Toggle button for small screens -->
+    <button class="nav__toggle btn-text" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="sr-only">Toggle navigation</span>
+      <!-- simple hamburger icon -->
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </button>
+
+    <!-- Main menu -->
+    <nav id="primary-menu" class="nav__menu" aria-label="Main menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="{{ '/' | relative_url }}">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="{{ '/about' | relative_url }}">About</a></li>
+        <li class="nav__item"><a class="nav__link" href="{{ '/projects' | relative_url }}">Projects</a></li>
+        <li class="nav__item"><a class="nav__link" href="{{ '/blog' | relative_url }}">Blog</a></li>
+        <li class="nav__item"><a class="nav__link" href="{{ '/contact' | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Minimal JS to handle the hamburger toggle and ARIA state. Keeps HTML accessible. -->
+  <script>
+    (function(){
+      var header = document.querySelector('.site-header');
+      var btn = header && header.querySelector('.nav__toggle');
+      var menu = header && header.querySelector('#primary-menu');
+      if(!btn || !menu || !header) return;
+      btn.addEventListener('click', function(){
+        var open = header.classList.toggle('nav--open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        // Move focus into menu when opened for keyboard users
+        if(open){
+          var first = menu.querySelector('a'); if(first) first.focus();
+        }
+      });
+    })();
+  </script>
+</header>
