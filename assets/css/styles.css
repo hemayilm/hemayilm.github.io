@@ -250,3 +250,85 @@ img{ max-width:100%; height:auto; display:block }
 
 /* small focus style for keyboard users */
 :focus{ outline-offset:2px }
+.section--narrow {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.page-header {
+  padding: 48px 0 24px;
+  text-align: center;
+}
+
+.page-title {
+  margin-bottom: 8px;
+}
+
+.page-subtitle {
+  color: var(--color-muted);
+}
+
+.content-block {
+  margin-bottom: 32px;
+}
+
+.content-block--center {
+  text-align: center;
+}
+
+.list--clean {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list--clean li {
+  margin-bottom: 10px;
+}
+.content-block {
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.content-block:last-child {
+  border-bottom: none;
+}
+.section h2 {
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+}
+
+.section p {
+  line-height: 1.65;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content-block {
+  animation: fadeUp 0.5s ease both;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+  font-size: 0.9rem;
+}
+.content-block--center {
+  background: rgba(255,255,255,0.02);
+  padding: 32px;
+  border-radius: 12px;
+} 
