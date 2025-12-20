@@ -4,7 +4,7 @@
   <div class="container nav" role="navigation" aria-label="Primary">
     <div class="nav__brand">
       <!-- Site title / logo -->
-      <a href="{{ '/' | relative_url }}" class="nav__logo">{{ site.title | default: "My Site" }}</a>
+      <a href="{{ site.baseurl }}/index.html" class="nav__logo">{{ site.title | default: "My Site" }}</a>
       <span class="nav__tag muted">{{ site.tagline }}</span>
     </div>
 
@@ -23,8 +23,6 @@
         <li class="nav__item"><a class="nav__link" href="{{ '/' | relative_url }}">Home</a></li>
         <li class="nav__item"><a class="nav__link" href="{{ '/about' | relative_url }}">About</a></li>
         <li class="nav__item"><a class="nav__link" href="{{ '/projects' | relative_url }}">Projects</a></li>
-        <li class="nav__item"><a class="nav__link" href="{{ '/blog' | relative_url }}">Blog</a></li>
-        <li class="nav__item"><a class="nav__link" href="{{ '/contact' | relative_url }}">Contact</a></li>
       </ul>
     </nav>
   </div>
