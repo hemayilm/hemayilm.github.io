@@ -20,12 +20,6 @@ title: "Home"
     I enjoy creating clean and modular websites, experimenting with modern design concepts, and continuously learning new technologies.
     Outside of coding, I appreciate aesthetics that are subtle, refined, and balanced — blending creativity with clarity.
   </p>
-
-  <!-- Action links: About + Projects -->
-  <div class="hero__actions">
-    <a class="btn btn--primary" href="{{ site.baseurl }}/about/">About Me</a>
-    <a class="btn btn--secondary" href="{{ site.baseurl }}/projects/">My Projects</a>
-  </div>
 </div>
 
   </div>

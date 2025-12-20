@@ -6,7 +6,6 @@ title: "Projects"
 <header class="page-header">
   <h1 class="page-title">Projects</h1>
   <p class="page-subtitle">Showcasing my academic and community projects</p>
-  <a href="#" class="btn btn--secondary">Visit GitHub Profile</a>
 </header>
 
 <main class="container section--narrow">
