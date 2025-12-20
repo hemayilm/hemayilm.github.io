@@ -6,6 +6,8 @@ title: "About"
 <header class="page-header">
   <h1 class="page-title">About Me</h1>
   <p class="page-subtitle">Information Systems student & aspiring developer</p>
+  <a href="{{ site.baseurl }}/projects/" class="btn btn--primary">View My Projects</a>
+  <a href="{{ site.baseurl }}/contact/" class="btn btn--secondary">Get in Touch</a>
 </header>
 
 <main class="container section--narrow">
