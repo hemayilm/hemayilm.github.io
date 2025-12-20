@@ -7,12 +7,12 @@ title: "Home"
 <header class="hero" role="banner">
   <div class="container hero__inner">
 
-    <!-- Profile photo -->
+    <-- Profile photo -->
     <div class="hero__photo" aria-hidden="false">
       <img src="{{ '/assets/images/image.png' | relative_url }}" alt="Profile photo">
     </div>
 
-    <!-- Intro content -->
+    <-- Intro content -->
     <div class="hero__content">
       <h1 class="hero__title">Hi — I'm Hamayil Mammadova.</h1>
       <p class="hero__subtitle">
@@ -21,7 +21,7 @@ title: "Home"
         Outside of coding, I appreciate aesthetics that are subtle, refined, and balanced — blending creativity with clarity.
       </p>
 
-      <!-- Action links: About + Projects -->
+      <-- Action links: About + Projects -->
       <div class="hero__actions">
         <a class="btn btn--primary" href="{{ '/about/' | relative_url }}">About Me</a>
         <a class="btn btn--secondary" href="{{ '/projects/' | relative_url }}">My Projects</a>
