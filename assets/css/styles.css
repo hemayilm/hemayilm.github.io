@@ -39,8 +39,10 @@ img{ max-width:100%; height:auto; display:block }
 
 .nav__menu{ display:flex; gap:var(--gap-sm); align-items:center; }
 .nav__item{ list-style:none }
-.nav__link{ padding:8px 12px; border-radius:6px; color:var(--color-text); transition:background 150ms, color 150ms; }
+.nav__link{ padding:8px 12px; border-radius:6px; color:var(--color-text); transition:background 150ms, color 150ms; display:flex; align-items:center; gap:6px; }
 .nav__link:hover{ background:rgba(255,255,255,0.03); color:var(--color-accent-2); }
+.nav__link i{ transition: color 150ms; }
+.nav__link:hover i{ color: var(--color-accent-2); }
 .nav__link:focus-visible{ outline:none; box-shadow:var(--focus-ring); }
 
 .nav__list{ margin:0; padding:0; display:flex; gap:var(--gap-sm); align-items:center; }
@@ -53,24 +55,51 @@ img{ max-width:100%; height:auto; display:block }
 @media(min-width:820px){
 	.nav__toggle{ display:none }
 	.nav__menu{ display:flex; position:static; flex-direction:row; background:transparent; padding:0; box-shadow:none }
+} 
+
+/* FOOTER LINKS: center the icons */
+.footer__links {
+  display: flex;
+  gap: var(--gap-sm);
+  align-items: center;
+  justify-content: center; /* center the icons horizontally */
 }
 
-/* FOOTER */
-.site-footer{ background:transparent; color:var(--color-muted); padding:28px 0; border-top:1px solid rgba(255,255,255,0.02); }
-.site-footer .container{ display:flex; flex-direction:column; gap:var(--gap-sm); align-items:center; justify-content:space-between; }
-.footer__links{ display:flex; gap:var(--gap-sm); align-items:center; }
-.footer__link{ color:var(--color-muted); padding:6px 8px; border-radius:6px; transition:color 120ms, background 120ms }
-.footer__link:hover{ color:var(--color-text); background:rgba(255,255,255,0.02) }
-.footer__meta{ font-size:0.9rem; color:var(--color-muted) }
-
-@media(min-width:720px){
-	.site-footer .container{ flex-direction:row }
+/* FOOTER LINK: text + icon styling, smooth transitions */
+.footer__link {
+  color: var(--color-muted);
+  padding: 6px 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 150ms, background 150ms, transform 150ms; /* added transform for shake effect */
 }
 
-/* Utility small helpers used by both components */
-.btn-text{ background:transparent; border: none; color:inherit; cursor:pointer }
-.muted{ color:var(--color-muted) }
+/* ICON inside footer link: size and transition */
+.footer__link i {
+  font-size: 1.2rem;
+  transition: color 150ms, transform 150ms; /* smooth color & shake transform */
+}
 
-/* small focus style for keyboard users */
-:focus{ outline-offset:2px }
+/* Hover effect: change color + shake */
+.footer__link:hover i {
+  color: var(--color-accent-2);
+  animation: shake 0.3s ease-in-out; /* shake animation on hover */
+}
+
+/* Hover effect: background and text color */
+.footer__link:hover {
+  color: var(--color-text);
+  background: rgba(255,255,255,0.02);
+}
+
+/* Shake animation keyframes */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
 
