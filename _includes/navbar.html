@@ -1,19 +1,16 @@
-<!-- Navbar include: place in _includes/navbar.html -->
-<!-- Left: brand/logo. Right: navigation links. Mobile: hamburger button toggles menu. -->
 <header class="site-header" role="banner">
   <div class="container nav" role="navigation" aria-label="Primary">
+
+    <!-- Brand / Logo -->
     <div class="nav__brand">
-      <!-- Site title / logo -->
       <a href="{{ site.baseurl }}/index.html" class="nav__logo">{{ site.title | default: "My Site" }}</a>
       <span class="nav__tag muted">{{ site.tagline }}</span>
     </div>
 
-    <!-- Toggle button for small screens -->
+    <!-- Hamburger toggle for mobile -->
     <button class="nav__toggle btn-text" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="sr-only">Toggle navigation</span>
-      <!-- simple hamburger icon -->
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
       </svg>
     </button>
 
@@ -27,21 +24,17 @@
     </nav>
   </div>
 
-  <!-- Minimal JS to handle the hamburger toggle and ARIA state. Keeps HTML accessible. -->
+  <!-- JS for hamburger toggle -->
   <script>
-    (function(){
-      var header = document.querySelector('.site-header');
-      var btn = header && header.querySelector('.nav__toggle');
-      var menu = header && header.querySelector('#primary-menu');
-      if(!btn || !menu || !header) return;
-      btn.addEventListener('click', function(){
-        var open = header.classList.toggle('nav--open');
-        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-        // Move focus into menu when opened for keyboard users
-        if(open){
-          var first = menu.querySelector('a'); if(first) first.focus();
-        }
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.querySelector('.nav__toggle');
+      const menu = document.querySelector('.nav__menu');
+
+      toggle.addEventListener('click', function() {
+        menu.classList.toggle('nav--open');
+        toggle.setAttribute('aria-expanded', menu.classList.contains('nav--open'));
       });
-    })();
+    });
   </script>
 </header>
+<!-- End of navbar.html -->

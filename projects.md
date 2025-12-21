@@ -12,13 +12,27 @@ title: "Projects"
 
   <!-- Project 1: Breaking Logic Gates -->
   <section class="section content-block">
-    <h2>Breaking Logic Gates (Group Work)</h2>
-    <p>
-      Collaborated in a team to design and simulate logic gate circuits for an academic project. 
-      Explored digital logic problems, implemented solutions, and analyzed circuit behavior.
-      Developed teamwork, problem-solving, and applied theoretical knowledge practically.
-    </p>
-    <p><strong>Technologies / Tools:</strong> Digital logic simulators, circuit analysis</p>
+    <div class="project-text">
+      <h2>Breaking Logic Gates</h2>
+      <p class="project-meta">
+        <em>Category:</em> Academic Project · <em>Focus:</em> Digital Logic
+      </p>
+      <p>
+        <strong>Breaking Logic Gates</strong> is a project focused on understanding the
+        fundamental building blocks of digital systems. The goal of this project
+        was to analyze how basic logic gates operate individually and how they
+        interact when combined into more complex logical circuits.
+      </p>
+      <div class="project-skills">
+        <h3>Skills Gained</h3>
+        <ul>
+          <li>Logical analysis and structured problem-solving</li>
+          <li>Understanding of binary systems and digital logic</li>
+          <li>Interpretation of truth tables and logic gate behavior</li>
+          <li>Connecting theory with practical computing systems</li>
+        </ul>
+      </div>
+    </div>
     <div class="about-photo">
       <img src="{{ '/assets/images/logic-gates.jpg' | relative_url }}" alt="Breaking Logic Gates Project Screenshot">
     </div>
@@ -26,24 +40,36 @@ title: "Projects"
 
   <!-- Project 2: Hour of AI -->
   <section class="section content-block">
-    <h2>Hour of AI with Rural Area Kids</h2>
-    <p>
-      Participated in a community initiative introducing AI concepts to children from rural areas. 
-      Delivered interactive sessions, coding exercises, and hands-on activities to spark interest in technology.
-      Developed communication skills and the ability to simplify complex concepts for beginners.
-    </p>
-    <p><strong>Technologies / Tools:</strong> Python basics, AI concepts, interactive exercises</p>
+    <div class="project-text">
+      <h2>Hour of AI</h2>
+      <p class="project-meta">
+        <em>Category:</em> Community Engagement · <em>Focus:</em> AI Education
+      </p>
+      <p>
+        <strong>Hour of AI</strong> is an educational event focused on introducing
+        the basic concepts of artificial intelligence to children with little or
+        no prior exposure to technology. The primary aim of this event was to make
+        AI understandable, engaging, and accessible for young learners.
+      </p>
+      <div class="project-skills">
+        <h3>Skills Gained</h3>
+        <ul>
+          <li>Effective communication of technical ideas to non-technical audiences</li>
+          <li>Simplification of complex concepts for beginners</li>
+          <li>Introductory understanding of artificial intelligence concepts</li>
+          <li>Public speaking, collaboration, and interactive teaching skills</li>
+        </ul>
+      </div>
+    </div>
     <div class="about-photo">
       <img src="{{ '/assets/images/hour-of-ai.jpg' | relative_url }}" alt="Hour of AI Project Screenshot">
     </div>
   </section>
 
-  <!-- Final call-to-action section -->
+  <!-- Call-to-Action Section -->
   <section class="section content-block content-block--center">
     <h2>Explore More Projects</h2>
-    <p>
-      You can explore all of my projects and contributions on my GitHub profile.
-    </p>
+    <p>You can explore all of my projects and contributions on my GitHub profile. ⤵</p>
   </section>
 
 </main>
