@@ -56,3 +56,4 @@ plugins:
 markdown: kramdown
 kramdown:
   input: GFM
+  # Force rebuild for GitHub Pages
