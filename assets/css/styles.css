@@ -185,7 +185,17 @@ img{ max-width:100%; height:auto; display:block }
   color: var(--color-text);
   background: rgba(255,255,255,0.02);
 }
+/* Open-source link styling */
+.footer__opensource a {
+  color: var(--color-accent-2); /* default link color */
+  text-decoration: underline;    /* makes it look clickable */
+  transition: color 150ms;       /* smooth color change on hover */
+}
 
+.footer__opensource a:hover,
+.footer__opensource a:focus {
+  color: var(--color-accent);    /* change color when hovered/focused */
+}
 /* Shake animation keyframes */
 @keyframes shake {
   0% { transform: translateX(0); }
